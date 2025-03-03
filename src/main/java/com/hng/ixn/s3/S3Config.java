@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class S3Config {
 
     private static final Region REGION = Region.EU_WEST_2;
-    private static final String BUCKET_NAME = "ixn-radio";
+    private static final String BUCKET_NAME = System.getenv("IXN_AWS_BUCKET_NAME");
 
     @Bean
     public S3Client s3Client() {

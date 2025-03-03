@@ -9,7 +9,8 @@
             - `IXN_APP_JWT_SECRET_KEY`
 
     - **AWS S3 Bucket**:
-        - Create a bucket named `ixn-radio`.
+        - Create a bucket, record its name and set it as this variable:
+            - `IXN_AWS_BUCKET_NAME`
         - Configure IAM access keys to allow access to the S3 bucket:
             - `IXN_AWS_USER_ACCESS_KEY`
             - `IXN_AWS_USER_SECRET_KEY`
